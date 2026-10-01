@@ -60,7 +60,7 @@ PDFind/
 ├── buscar.py         # faz as buscas e exporta CSV
 ├── pdfs.db           # índice — criado automaticamente
 ├── tessdata/         # modelo de OCR — baixado automaticamente
-└── Atas/             # seus PDFs (pode ficar em qualquer lugar)
+└── PDFs/             # seus PDFs (pode ficar em qualquer lugar)
 ```
 
 > [!IMPORTANT]
@@ -124,7 +124,7 @@ py -m pip install pymupdf
 ### 1. Indexar
 
 ```powershell
-py indexar.py C:\Projetos\PDFind\Atas
+py indexar.py C:\Projetos\PDFind\PDFs
 ```
 
 Durante a execução, cada arquivo concluído vira uma linha fixa, enquanto os que estão em andamento mostram sua própria barra:
