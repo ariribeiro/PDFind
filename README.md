@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔎 BuscaAtas
+# 🔎 PDFind
 
 **Busca full-text em milhares de PDFs, inclusive escaneados, 100% local.**
 
@@ -16,7 +16,7 @@
 
 ## ✨ O que faz
 
-O BuscaAtas lê uma pasta de PDFs, extrai o texto de cada página e guarda tudo num índice de busca local. A extração é demorada, mas acontece **uma única vez**. Depois disso, qualquer busca nos milhares de arquivos responde em milissegundos.
+O **PDFind** (*PDF + find*) lê uma pasta de PDFs, extrai o texto de cada página e guarda tudo num índice de busca local. A extração é demorada, mas acontece **uma única vez**. Depois disso, qualquer busca nos milhares de arquivos responde em milissegundos.
 
 - 📄 **Extrai o texto** de PDFs digitais diretamente.
 - 🖼️ **Faz OCR automático** nas páginas escaneadas, só nas que não têm texto.
@@ -55,7 +55,7 @@ flowchart LR
 ## 📂 Estrutura do projeto
 
 ```
-BuscaAtas/
+PDFind/
 ├── indexar.py        # indexador (Python)
 ├── buscar.py         # busca (Python)
 ├── indexar.mjs       # indexador (Node.js)
@@ -150,10 +150,10 @@ Na primeira execução com OCR, o tesseract.js baixa o modelo de português (~15
 
 ```powershell
 # Python
-py indexar.py C:\Projetos\BuscaAtas\Atas
+py indexar.py C:\Projetos\PDFind\Atas
 
 # Node.js
-node --no-warnings indexar.mjs C:\Projetos\BuscaAtas\Atas
+node --no-warnings indexar.mjs C:\Projetos\PDFind\Atas
 ```
 
 Durante a execução, cada arquivo concluído vira uma linha fixa, enquanto os que estão em andamento mostram sua própria barra:
